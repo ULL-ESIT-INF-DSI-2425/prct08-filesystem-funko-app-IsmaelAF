@@ -96,7 +96,10 @@ describe("Tests FunkoManager", () => {
 
     test("Agregar funko", () => {
         borrarDir();
-        fs.rmdirSync("data/usuarioTests");
+        if(fs.existsSync("data/usuarioTests")) {
+            fs.rmdirSync("data/usuarioTests");
+        }
+        //fs.rmdirSync("data/usuarioTests");
         let manager = new FunkoManager("usuarioTests");
         manager.addFunko(funkoTest);
 
