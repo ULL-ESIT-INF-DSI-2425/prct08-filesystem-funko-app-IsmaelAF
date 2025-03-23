@@ -42,30 +42,30 @@ const argv = yargs(hideBin(process.argv))
         manager.listarFunkos();
     })
     .command("update", "Modificar un Funko", {
-        user: { type: "string", demandOption: true },
-        id: { type: "number", demandOption: true },
-        name: { type: "string", demandOption: true },
-        desc: { type: "string", demandOption: true },
-        type: { type: "string", choices: Object.values(FunkoTipo), demandOption: true },
-        genre: { type: "string", choices: Object.values(FunkoGenero), demandOption: true },
-        franq: { type: "string", demandOption: true },
-        numero: { type: "number", demandOption: true },
-        exclu: { type: "boolean", demandOption: true },
-        carac: { type: "string", demandOption: true },
-        valor: { type: "number", demandOption: true }
+        useru: { type: "string", demandOption: true },
+        idu: { type: "number", demandOption: true },
+        nameu: { type: "string", demandOption: true },
+        descu: { type: "string", demandOption: true },
+        typeu: { type: "string", choices: Object.values(FunkoTipo), demandOption: true },
+        genreu: { type: "string", choices: Object.values(FunkoGenero), demandOption: true },
+        franqu: { type: "string", demandOption: true },
+        numerou: { type: "number", demandOption: true },
+        excluu: { type: "boolean", demandOption: true },
+        caracu: { type: "string", demandOption: true },
+        valoru: { type: "number", demandOption: true }
     }, (argv) => {
-        const manager = new FunkoManager(argv.user);
+        const manager = new FunkoManager(argv.useru);
         const updateFunko = new Funko(
-            argv.id,
-            argv.name,
-            argv.desc,
-            argv.type as FunkoTipo,
-            argv.genre as FunkoGenero,
-            argv.franq,
-            argv.numero,
-            argv.exclu,
-            argv.carac,
-            argv.valor
+            argv.idu,
+            argv.nameu,
+            argv.descu,
+            argv.typeu as FunkoTipo,
+            argv.genreu as FunkoGenero,
+            argv.franqu,
+            argv.numerou,
+            argv.excluu,
+            argv.caracu,
+            argv.valoru
         );
         manager.actualizarFunko(updateFunko);
     })
