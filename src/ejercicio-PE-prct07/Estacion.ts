@@ -1,7 +1,6 @@
 import { Observable } from "./int_Observable.js";
 import { Observer } from "./int_Observer.js";
 import { Movil } from "./Movil.js";
-import { Panel } from "./Panel.js";
 
 
 export enum EstacionEventType {'NO_EVENT', 'TEMPERATURA_CHANGED', 'TORMENTA', 'NO_TORMENTA'};
