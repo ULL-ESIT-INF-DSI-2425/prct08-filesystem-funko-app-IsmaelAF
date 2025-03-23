@@ -90,7 +90,7 @@ const consoleSpy = vi.spyOn(console, 'log');
 describe("Tests FunkoManager", () => {
     
     //afterEach(() => {
-    //    fs.rmSync(`data/usuarioTests}`, { recursive: true });
+    //     fs.rmSync(`data/usuarioTests}`, { recursive: true });
     //});
 
 
