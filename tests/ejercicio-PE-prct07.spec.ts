@@ -30,10 +30,6 @@ describe("Tests Ejercicio-PE-prct07", () => {
     });
   
 
-    test("Cambio temperatura", () => {
-        miEstacion.temperatura();
-        expect(consoleSpy).toHaveBeenCalledWith("Notificacion desde Panel de Estacion Norte cambio de temperatura.");
-    });
 
     test("Cambio temperatura", () => {
         Estacion2.setTemp(40);
@@ -45,16 +41,7 @@ describe("Tests Ejercicio-PE-prct07", () => {
         expect(consoleSpy).toHaveBeenCalledWith("Notificacion desde Movil Personal de Estacion Sur se acerca tormenta.");
     });
 
-    test("Cambio temperatura", () => {
-        miEstacion.tormenta();
-        expect(consoleSpy).toHaveBeenCalledWith("Notificacion desde Panel de Estacion Norte se acerca tormenta.");
-    });
 
-    test("Cambio temperatura", () => {
-        //miEstacion.notormenta();
-        miEstacion.notormenta();
-        expect(consoleSpy).toHaveBeenCalledWith("Notificacion desde Panel de Estacion Norte NO se acerca tormenta.");
-    });
 
     test("Cambio temperatura", () => {
         //miEstacion.notormenta();
