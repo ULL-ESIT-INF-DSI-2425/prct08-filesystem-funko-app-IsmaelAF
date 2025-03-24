@@ -1,0 +1,14 @@
+fichero de logs
+WARNING 1
+ERROR fallo
+fallo4 ERROR
+INFO informacion
+INFO ejercicio1
+INFO ejercicio2
+INFO ejercicio3
+INFO ejercicio4
+INFO ejercicio5
+INFO ejercicio6
+ERROR
+ERROR
+ERROR
